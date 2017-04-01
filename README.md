@@ -8,7 +8,17 @@ Presently, this just does style transfer on a frame by frame basis. I have yet t
 ![](https://github.com/gsssrao/fast-artistic-videos/blob/master/examples/outputStarwars.gif)
 
 ## Dependencies
-* All the dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+
+###Dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+* [torch7](https://github.com/torch/torch7)
+* [unsup](https://github.com/koraykv/unsup) (Only if you are using **color-preserved style transfer**)
+
+Optionally:
+* CUDA and cuDNN
+* [cunn](https://github.com/torch/cunn)
+* [torch.cudnn](https://github.com/soumith/cudnn.torch)
+
+###Extra Dependencies
 * [ffmpeg](https://ffmpeg.org/)
 
 ## Execution Time
@@ -41,7 +51,7 @@ The individual frames would be present in ```input/cutBunny``` folder and output
 
 ## Example Video
 
-An example video with some results can be seen [here](https://www.youtube.com/watch?v=BGPYmJWjyXU&feature=youtu.be) on youtube.
+An example video with some results can be seen [here](https://www.youtube.com/watch?v=vVkufidT0fc&t=1s) on youtube.
 
 ## Citation
 
