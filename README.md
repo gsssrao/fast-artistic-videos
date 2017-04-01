@@ -31,6 +31,10 @@ This will generate two mp4 files namely ```cutBunny-stylized-mondrian.mp4``` and
 
 The individual frames would be present in ```input/cutBunny``` folder and outputs would generated similarly in output folder.
 
+## Example Video
+
+An example video with some results can be seen [here](https://www.youtube.com/watch?v=BGPYmJWjyXU&feature=youtu.be) on youtube.
+
 ## Citation
 
 If you find this code useful for your research, please cite the paper:
