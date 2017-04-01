@@ -11,6 +11,10 @@ Presently, this just does style transfer on a frame by frame basis. I have yet t
 * All the dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 * [ffmpeg](https://ffmpeg.org/)
 
+## Execution Time
+
+For a 10s video with 480p resolution it takes about 2-3 minutes on a Titan X Maxwell GPU (12GB).
+
 ## Download
 ```
 bash models/download_models.sh

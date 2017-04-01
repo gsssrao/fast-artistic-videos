@@ -49,7 +49,7 @@ do
   stylename=$(basename "${styleimage}")
   stylename="${stylename%.*}"
   stylename=${stylename//[%]/x}
-  th test.lua -contentDir input/${filename} -style ${styleimage} -outputDir output/${filename}-${stylename} -alpha 0.5
+  th test.lua -contentDir input/${filename} -style ${styleimage} -outputDir output/${filename}-${stylename}
 
   # Generate video from output images.
   $FFMPEG -i output/${filename}-${stylename}/frame_%04d_stylized_${stylename}.jpg ${filename}-stylized-${stylename}.$extension
