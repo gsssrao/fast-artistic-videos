@@ -29,8 +29,8 @@ styledirpath=$2
 mkdir -p input/$filename
 
 echo ""
-read -p "Maximum recommended resolution with a Titan X 12GB: 960:540. \
-  Please enter a resolution at which the content video should be processed, \
+read -p "Maximum recommended resolution with a Titan X 12GB: 500,000 pixels \
+  (i.e around 960:540). Please enter a resolution at which the content video should be processed, \
   in the format w:h (example 640:480), or press enter to use the original resolution $cr > " resolution
 
 
@@ -54,3 +54,5 @@ do
   # Generate video from output images.
   $FFMPEG -i output/${filename}-${stylename}/frame_%04d_stylized_${stylename}.jpg ${filename}-stylized-${stylename}.$extension
 done
+
+$FFMPEG -i input/${filename}/frame_%04d.ppm ${filename}-fix.$extension

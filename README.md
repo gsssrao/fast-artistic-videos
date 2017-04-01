@@ -9,7 +9,7 @@ Presently, this just does style transfer on a frame by frame basis. I have yet t
 
 ## Dependencies
 
-###Dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
+### Dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 * [torch7](https://github.com/torch/torch7)
 * [unsup](https://github.com/koraykv/unsup) (Only if you are using **color-preserved style transfer**)
 
@@ -18,7 +18,7 @@ Optionally:
 * [cunn](https://github.com/torch/cunn)
 * [torch.cudnn](https://github.com/soumith/cudnn.torch)
 
-###Extra Dependencies
+### Extra Dependencies
 * [ffmpeg](https://ffmpeg.org/)
 
 ## Execution Time
