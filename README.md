@@ -3,6 +3,10 @@ This repository is based on work by Huan Xun on [AdaIN-style](https://github.com
 
 Presently, this just does style transfer on a frame by frame basis. I have yet to include optical flow to optimize it (like in [artistic-videos](https://github.com/manuelruder/artistic-videos) repository). But, this is way faster in comparison to artistic-videos as it peforms style transfer using Adaptive Instance Normalization.
 
+![](https://github.com/gsssrao/fast-artistic-videos/blob/master/examples/outputBunny.gif)
+
+![](https://github.com/gsssrao/fast-artistic-videos/blob/master/examples/outputStarwars.gif)
+
 ## Dependencies
 * All the dependencies of [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style)
 * [ffmpeg](https://ffmpeg.org/)
