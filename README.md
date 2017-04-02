@@ -1,7 +1,9 @@
 # Arbitrary Style Transfer for Videos
 This repository is based on work by Huan Xun on [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style). The extension done is added support for videos. 
 
-Presently, this just does style transfer on a frame by frame basis. I have yet to include optical flow to optimize it (like in [artistic-videos](https://github.com/manuelruder/artistic-videos) repository). But, this is way faster in comparison to artistic-videos as it peforms style transfer using Adaptive Instance Normalization.
+Presently, this does style transfer on a frame by frame basis. I store style features so that style image is processed only once. This creates a speedup of about 1.2-1.4x.
+
+I have yet to include optical flow to optimize it (like in [artistic-videos](https://github.com/manuelruder/artistic-videos) repository). This will require retraining to support temporal consistency. But, this is way faster in comparison to artistic-videos as it peforms style transfer using Adaptive Instance Normalization.
 
 ![](https://github.com/gsssrao/fast-artistic-videos/blob/master/examples/outputBunny.gif)
 
@@ -23,7 +25,7 @@ Optionally:
 
 ## Execution Time
 
-For a 10s video with 480p resolution it takes about 2-3 minutes on a Titan X Maxwell GPU (12GB).
+For a 10s video with 480p resolution it takes about 2 minutes on a Titan X Maxwell GPU (12GB).
 
 ## Download
 ```
@@ -42,12 +44,12 @@ To, change other parameters like alpha etc. edit ```test.lua```.
 
 ### Example usage
 ```
-bash styVid.sh cutBunny.mp4 style
+bash styVid.sh input/videos/cutBunny.mp4 input/styleexample
 ```
 
-This will generate two mp4 files namely ```cutBunny-stylized-mondrian.mp4``` and ```cutBunny-stylized-woman_with_hat_matisse.mp4``` in this directory. I have included the files in ```examples/Result``` folder for reference. 
+This will first create two folder namely ```videos``` and ```videoprocessing```. Then it will generate three mp4 files namely ```cutBunny-stylized-mondrian.mp4```, ```cutBunny-stylized-woman_with_hat_matisse.mp4``` and ```cutBunny-fix.mp4``` in ```videos``` folder. I have included the files in ```examples/Result``` folder for reference. 
 
-The individual frames would be present in ```input/cutBunny``` folder and outputs would generated similarly in output folder.
+The individual frames and output would be present in ```videoprocessing``` folder.
 
 ## Example Video
 
