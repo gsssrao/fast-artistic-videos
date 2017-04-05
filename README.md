@@ -32,6 +32,10 @@ For a 10s video with 480p resolution it takes about 2 minutes on a Titan X Maxwe
 bash models/download_models.sh
 ```
 
+## TODO
+- [ ] Add audio support
+- [ ] Retrain to incorporate motion information
+
 ## Usage
 ### Basic usage
 ```
