@@ -1,7 +1,7 @@
 # Arbitrary Style Transfer for Videos
-This repository is based on work by Huan Xun on [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style). The extension done is added support for videos. 
+This repository's code has been merged with [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style). This repository will contain only experiments and minor improvements. All major updates will be merged with [AdaIN-style](https://github.com/xunhuang1995/AdaIN-style).
 
-Presently, this does style transfer on a frame by frame basis. I store style features so that style image is processed only once. This creates a speedup of about 1.2-1.4x.
+Presently, I do style transfer on a frame by frame basis. I store style features so that style image is processed only once. This creates a speedup of about 1.2-1.4x.
 
 I have yet to include optical flow to optimize it (like in [artistic-videos](https://github.com/manuelruder/artistic-videos) repository). This will require retraining to support temporal consistency. But, this is way faster in comparison to artistic-videos as it peforms style transfer using Adaptive Instance Normalization.
 
